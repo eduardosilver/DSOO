@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class InsercaoComArrayList {
+
+    public static void main(String[] args) {
+        
+        ArrayList<String> lista = new ArrayList<String>();
+        
+        String[] nome = {
+            "Thomas", "Indiana João", "Clare", "Alasca", "Hazel", "Mago", 
+            "Elena", "Tris", "Harry", "Cormoram", "Bilbo", "John"
+        };
+        
+        int i;
+        
+        for(i = 0; i < nome.length; i ++)
+        {
+            lista.add(nome[i]);            
+        }
+        
+        Collections.sort(lista);
+        
+        for(i = 0; i < lista.size(); i ++)
+        {
+            System.out.println(lista.get(i));            
+        }
+        
+    }
+}
