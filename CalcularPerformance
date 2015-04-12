@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class CalcularPerformance {
+    public static void main(String[] args){
+
+        ArrayList<Integer> lista = new ArrayList<Integer>(); 
+        
+        int i;
+        int total;
+        long inicio;
+        long fim; 
+        long tempo;
+        
+        inicio = System.currentTimeMillis();
+        
+        total = 30000;
+        for(i = 0; i < total; i++)
+        {            
+            lista.add(i);            
+        }
+        
+        for(i = 0; i < total; i ++)
+        {
+            lista.contains(i);
+        }
+        
+         fim = System.currentTimeMillis();
+         
+         tempo = fim - inicio;
+         
+         System.out.println("O tempo gasto no processo foi de " + tempo);
+         
+    }
+    
+  } 
+
